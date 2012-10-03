@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F68806B161CC2FE00872C2F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F68806A161CC2FE00872C2F /* AVFoundation.framework */; };
+		0F68806D161CC30500872C2F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F68806C161CC30500872C2F /* CoreMotion.framework */; };
+		0F68806F161CC30B00872C2F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F68806E161CC30B00872C2F /* AudioToolbox.framework */; };
+		0F68807B161CC49A00872C2F /* Backdrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F688078161CC49A00872C2F /* Backdrop.m */; };
+		0F68807C161CC49A00872C2F /* BackdropTile.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F688079161CC49A00872C2F /* BackdropTile.png */; };
+		0F68807D161CC49A00872C2F /* BackdropTile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F68807A161CC49A00872C2F /* BackdropTile@2x.png */; };
+		0F688085161CC5A000872C2F /* ControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F688080161CC5A000872C2F /* ControlsView.m */; };
+		0F688086161CC5A000872C2F /* FilePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F688081161CC5A000872C2F /* FilePlayer.cpp */; };
+		0F688087161CC5A000872C2F /* SongPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F688084161CC5A000872C2F /* SongPlayer.mm */; };
+		0F688089161CC60D00872C2F /* looperman-cufool-im-alive.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0F688088161CC60D00872C2F /* looperman-cufool-im-alive.wav */; };
 		0F68C3081610424A00DD45C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F68C3071610424A00DD45C4 /* UIKit.framework */; };
 		0F68C30A1610424A00DD45C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F68C3091610424A00DD45C4 /* Foundation.framework */; };
 		0F68C30C1610424A00DD45C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F68C30B1610424A00DD45C4 /* CoreGraphics.framework */; };
@@ -21,6 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F68806A161CC2FE00872C2F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0F68806C161CC30500872C2F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0F68806E161CC30B00872C2F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0F688077161CC49A00872C2F /* Backdrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Backdrop.h; sourceTree = "<group>"; };
+		0F688078161CC49A00872C2F /* Backdrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Backdrop.m; sourceTree = "<group>"; };
+		0F688079161CC49A00872C2F /* BackdropTile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackdropTile.png; sourceTree = "<group>"; };
+		0F68807A161CC49A00872C2F /* BackdropTile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackdropTile@2x.png"; sourceTree = "<group>"; };
+		0F68807F161CC5A000872C2F /* ControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsView.h; sourceTree = "<group>"; };
+		0F688080161CC5A000872C2F /* ControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlsView.m; sourceTree = "<group>"; };
+		0F688081161CC5A000872C2F /* FilePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilePlayer.cpp; sourceTree = "<group>"; };
+		0F688082161CC5A000872C2F /* FilePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilePlayer.h; sourceTree = "<group>"; };
+		0F688083161CC5A000872C2F /* SongPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongPlayer.h; sourceTree = "<group>"; };
+		0F688084161CC5A000872C2F /* SongPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SongPlayer.mm; sourceTree = "<group>"; };
+		0F688088161CC60D00872C2F /* looperman-cufool-im-alive.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "looperman-cufool-im-alive.wav"; sourceTree = "<group>"; };
 		0F68C3031610424A00DD45C4 /* MotionAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F68C3071610424A00DD45C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0F68C3091610424A00DD45C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F68806F161CC30B00872C2F /* AudioToolbox.framework in Frameworks */,
+				0F68806D161CC30500872C2F /* CoreMotion.framework in Frameworks */,
+				0F68806B161CC2FE00872C2F /* AVFoundation.framework in Frameworks */,
 				0F68C3081610424A00DD45C4 /* UIKit.framework in Frameworks */,
 				0F68C30A1610424A00DD45C4 /* Foundation.framework in Frameworks */,
 				0F68C30C1610424A00DD45C4 /* CoreGraphics.framework in Frameworks */,
@@ -53,9 +80,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F688070161CC31B00872C2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F68807F161CC5A000872C2F /* ControlsView.h */,
+				0F688080161CC5A000872C2F /* ControlsView.m */,
+				0F688077161CC49A00872C2F /* Backdrop.h */,
+				0F688078161CC49A00872C2F /* Backdrop.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0F688071161CC32000872C2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F688082161CC5A000872C2F /* FilePlayer.h */,
+				0F688081161CC5A000872C2F /* FilePlayer.cpp */,
+				0F688083161CC5A000872C2F /* SongPlayer.h */,
+				0F688084161CC5A000872C2F /* SongPlayer.mm */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0F688072161CC34F00872C2F /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				0F688088161CC60D00872C2F /* looperman-cufool-im-alive.wav */,
+			);
+			name = Samples;
+			sourceTree = "<group>";
+		};
+		0F68807E161CC4A100872C2F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0F688079161CC49A00872C2F /* BackdropTile.png */,
+				0F68807A161CC49A00872C2F /* BackdropTile@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		0F68C2F81610424A00DD45C4 = {
 			isa = PBXGroup;
 			children = (
+				0F68806E161CC30B00872C2F /* AudioToolbox.framework */,
+				0F68806C161CC30500872C2F /* CoreMotion.framework */,
+				0F68806A161CC2FE00872C2F /* AVFoundation.framework */,
 				0F68C30D1610424A00DD45C4 /* MotionAudio */,
 				0F68C3061610424A00DD45C4 /* Frameworks */,
 				0F68C3041610424A00DD45C4 /* Products */,
@@ -83,10 +152,10 @@
 		0F68C30D1610424A00DD45C4 /* MotionAudio */ = {
 			isa = PBXGroup;
 			children = (
-				0F68C3161610424A00DD45C4 /* AppDelegate.h */,
-				0F68C3171610424A00DD45C4 /* AppDelegate.m */,
 				0F68C31F1610424A00DD45C4 /* ViewController.h */,
 				0F68C3201610424A00DD45C4 /* ViewController.m */,
+				0F688071161CC32000872C2F /* Models */,
+				0F688070161CC31B00872C2F /* Views */,
 				0F68C3221610424A00DD45C4 /* ViewController.xib */,
 				0F68C30E1610424A00DD45C4 /* Supporting Files */,
 			);
@@ -96,6 +165,10 @@
 		0F68C30E1610424A00DD45C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F68807E161CC4A100872C2F /* Images */,
+				0F688072161CC34F00872C2F /* Samples */,
+				0F68C3161610424A00DD45C4 /* AppDelegate.h */,
+				0F68C3171610424A00DD45C4 /* AppDelegate.m */,
 				0F68C30F1610424A00DD45C4 /* MotionAudio-Info.plist */,
 				0F68C3101610424A00DD45C4 /* InfoPlist.strings */,
 				0F68C3131610424A00DD45C4 /* main.m */,
@@ -163,6 +236,9 @@
 				0F68C31C1610424A00DD45C4 /* Default@2x.png in Resources */,
 				0F68C31E1610424A00DD45C4 /* Default-568h@2x.png in Resources */,
 				0F68C3241610424A00DD45C4 /* ViewController.xib in Resources */,
+				0F68807C161CC49A00872C2F /* BackdropTile.png in Resources */,
+				0F68807D161CC49A00872C2F /* BackdropTile@2x.png in Resources */,
+				0F688089161CC60D00872C2F /* looperman-cufool-im-alive.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +252,10 @@
 				0F68C3141610424A00DD45C4 /* main.m in Sources */,
 				0F68C3181610424A00DD45C4 /* AppDelegate.m in Sources */,
 				0F68C3211610424A00DD45C4 /* ViewController.m in Sources */,
+				0F68807B161CC49A00872C2F /* Backdrop.m in Sources */,
+				0F688085161CC5A000872C2F /* ControlsView.m in Sources */,
+				0F688086161CC5A000872C2F /* FilePlayer.cpp in Sources */,
+				0F688087161CC5A000872C2F /* SongPlayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +336,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MotionAudio/MotionAudio-Prefix.pch";
 				INFOPLIST_FILE = "MotionAudio/MotionAudio-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -267,6 +348,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MotionAudio/MotionAudio-Prefix.pch";
 				INFOPLIST_FILE = "MotionAudio/MotionAudio-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -291,6 +373,7 @@
 				0F68C3291610424A00DD45C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+@property (readwrite, nonatomic, strong)UIColor *appColor;
+
 @end

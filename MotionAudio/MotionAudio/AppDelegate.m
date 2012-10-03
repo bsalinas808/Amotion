@@ -9,14 +9,35 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "Backdrop.h"
 
 @implementation AppDelegate
+{
+    UIColor *appColor_;
+}
+
+- (void)appDefaults
+{
+    appColor_ = [UIColor orangeColor];
+    [[UISlider appearance] setThumbTintColor:[UIColor blackColor]];
+    [[UISlider appearance] setMinimumTrackTintColor:appColor_];
+    [[UISlider appearance] setMaximumTrackTintColor:[UIColor grayColor]];
+    [[UISwitch appearance] setOnTintColor:appColor_];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    
+    [self appDefaults];
+    Backdrop *backDrop = [[Backdrop alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	backDrop.backgroundColor = [UIColor clearColor];
+    [self.viewController.view addSubview:backDrop];
+    [self.viewController.view sendSubviewToBack:backDrop];
+    self.viewController.appColor = appColor_;
+    
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
