@@ -19,6 +19,9 @@
 @end
 
 @implementation ViewController
+{
+    UIColor *viewBackgroundColor_;
+}
 
 #pragma mark - Toolbar
 #define TOOLBAR_HEIGHT 44.0
@@ -73,19 +76,14 @@
     rect.origin.y = TOOLBAR_HEIGHT ;
     
     self.controls = [[ControlsView alloc] initWithFrame:rect];
-    self.controls.delegate = self;
-    
-    
-    self.controls.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.5];
-    
-    
-    
+    self.controls.backgroundColor = viewBackgroundColor_;
     self.controls.layer.cornerRadius = CORNER_RADIUS;
     [self.controls setBounds:CGRectMake(BORDER_WIDTH,
                                         BORDER_WIDTH,
                                         self.controls.bounds.size.width - BORDER_WIDTH,
                                         self.controls.bounds.size.height - BORDER_WIDTH)];
 	self.controls.layer.edgeAntialiasingMask = YES;
+    self.controls.delegate = self;
     [self.view addSubview:self.controls];
 }
 
@@ -96,11 +94,7 @@
     rect.size.height -= (rect.origin.y + 22.0);
     
     UIView *dirView = [[UIView alloc] initWithFrame:rect];
-    
-    
-    dirView.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.5];
-    
-    
+    dirView.backgroundColor = viewBackgroundColor_;
     dirView.layer.cornerRadius = CORNER_RADIUS;
     [dirView setBounds:CGRectMake(BORDER_WIDTH,
                                   BORDER_WIDTH,
@@ -108,7 +102,6 @@
                                   dirView.bounds.size.height - BORDER_WIDTH)];
 	dirView.layer.edgeAntialiasingMask = YES;
     
-
     CGFloat labelBorder = 50.0;
     rect.origin.x += labelBorder;
     rect.origin.y = 6.0;
@@ -188,6 +181,7 @@
     [super viewDidLoad];
     
     _sPlayer = [SongPlayer new];
+    viewBackgroundColor_ = [[UIColor grayColor] colorWithAlphaComponent:0.5];
     [self buildControlsView];
     [self buildDirectionsView];
     [self buildMotionManager];
