@@ -61,6 +61,7 @@
         _hardwareSampleRate = sampleRate;
         [self configureAudioSession];
         fPlayer_ = new FilePlayer(_hardwareSampleRate);
+        [self setVolume:0.0];
     }
     return self;
 }

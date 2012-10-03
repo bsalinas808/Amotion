@@ -74,7 +74,12 @@
     
     self.controls = [[ControlsView alloc] initWithFrame:rect];
     self.controls.delegate = self;
+    
+    
     self.controls.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.5];
+    
+    
+    
     self.controls.layer.cornerRadius = CORNER_RADIUS;
     [self.controls setBounds:CGRectMake(BORDER_WIDTH,
                                         BORDER_WIDTH,
@@ -150,11 +155,17 @@
             }
             
             // Volume
-            accel = -deviceData.gravity.z;
+            // Just hacked a solution to change the tilt direction of the volume
+            // which introduced a bug/feature of tilting past 0 degrees will
+            // turn the volume all the way down.
+            accel = deviceData.gravity.z + 1.0;
             if (deviceData.gravity.z <  0.0 && deviceData.gravity.y < -kThreshold) {
                 float value = accel*.90 + .10;
                 self.sPlayer.volume = accel;
                 [self.controls.volume setValue:value animated:YES];
+            } else {
+                self.sPlayer.volume = 0.0;
+                [self.controls.volume setValue:0.0 animated:YES];
             }
         };
         

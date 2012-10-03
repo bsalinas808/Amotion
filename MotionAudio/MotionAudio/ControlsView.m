@@ -41,7 +41,7 @@
     _volume.enabled = NO;
     _volume.tag = 1;
     [_volume addTarget:self action:@selector(setVolume:) forControlEvents:UIControlEventValueChanged];
-    _volume.value = 1.0;
+    _volume.value = 0.0;
     [self addSubview:_volume];
 }
 
